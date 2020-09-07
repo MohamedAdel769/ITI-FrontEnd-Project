@@ -1,0 +1,27 @@
+:root{
+    --headline1-size: 57pt;
+    --headline2-size: 53pt; 
+    --headline3-size: 30pt;
+    --parag-size: 25pt;  
+    --primary-color: #0B2A53;
+    --secondary-color: #757575;
+    --body-color: #AAA;
+    --bg-color: #ececec;
+    --action-color: #40c409;
+    --rating-color: #ffc107; 
+}
+@font-face{
+    font-family: 'seg regular';
+    src: url(../fonts/segoeui.ttf);  
+}
+@font-face{
+    font-family: 'seg bold';
+    src: url(../fonts/segoeuib.ttf);
+}
+@font-face{
+    font-family: 'seg sbold';
+    src: url(../fonts/seguisb.ttf);
+    
+}
+
+
