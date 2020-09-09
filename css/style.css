@@ -149,6 +149,30 @@ header {
     background-color: #3C4858;
 }
 
+.tooltip-title{
+    position: relative;
+}
+.tooltip-title::after{
+    --scale: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%) scale(var(--scale));
+    transition: 90ms transform;
+    transform-origin: top center;
+    content: attr(data-tooltip);
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background: #222;
+    border-radius: 0.3rem;
+    font-size: 13px;
+}
+
+.tooltip-title:hover::after{
+    --scale: 1;
+}
+
 /* end navbar */
 
 
