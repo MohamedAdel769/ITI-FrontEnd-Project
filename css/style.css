@@ -36,11 +36,13 @@
 body {
     font-family: 'seg regular';
     color: white;
+    
 }
 
 .container {
     max-width: 1400px;
-    margin: auto
+    margin: auto;
+    position: relative;
 }
 
 ul {
@@ -175,7 +177,124 @@ header {
 
 /* end navbar */
 
+/* start side navbar */
+.bars{
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 36px;
+}
 
-.clearfix {
-    clear: both;
+.logo-overlay{
+    display: none;
+    font-size: 36px;
+    font-family: 'seg sbold';
+    color: #ececec;
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    transform: translateX(-50%);
+}
+
+.overlay{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  background-color: #24252a;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay-active{
+    width: 100%;
+}
+
+.overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+  
+.overlay a:hover,
+.overlay a:focus {
+    color: #d3a261;
+}
+
+.icons-overlay a{
+    font-size: 34px;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+}
+
+.logo-overlay:hover{
+    color: #ececec;
+}
+/* end side navbar */
+
+/* start media */
+@media screen and (max-height: 450px){
+    .overlay a {
+        font-size: 20px;
+    }
+    .icons-overlay a{
+        font-size: 16px;
+    }
+    .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media only screen and (max-width: 1135px) {
+    .flex-nav,
+    .logo {
+      display: none;
+    }
+    .bars,
+    .logo-overlay {
+      display: initial;
+    }
+}
+
+/* @media only screen and (max-width: 700px) {
+    .flex-nav,
+    .logo {
+      display: none;
+    }
+    .bars,
+    .logo-overlay {
+      display: initial;
+    }
+} */
+
+/* end media */
+
+/* my frame work */
+.text-center {
+    text-align: center;
+}
+.curser-point{
+    cursor: pointer;
 }
