@@ -1,88 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashmala - Furniture</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- start header -->
     <header>
-        <div class="container flex-header">
-            <div class="logo">
-                <a href="">
-                    <img src="../imgs/logo3.png" alt="logo" width="150px">
-                </a>
-            </div>
-            <div class="flex-nav">
-                <nav class="navbar">
-                    <ul class="links">
-                        <li>
-                            <a href="#" class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false" role="button">
-                                categories</a>
-                            <ul id="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                                <li class="dropdown-item"><a href="#">Living Rooms</a></li>
-                                <li class="dropdown-item"><a href="#">Dining Rooms</a></li>
-                                <li class="dropdown-item"><a href="#">Bed Rooms</a></li>
-                                <li class="dropdown-item"><a href="#">Children Rooms</a></li>
-                                <li class="dropdown-item"><a href="#">Kitchens</a></li>
-                                <li class="dropdown-item"><a href="#">Home Office</a></li>
-                            </ul>
-                        </li>
-
-                        <li> <a href="#">about us</a> </li>
-                        <li> <a href="#">contact us</a> </li>
-                    </ul>
-                </nav>
-                <nav class="navbar">
-                    <ul class="icons">
-                        <li> <a class="tooltip-title" href="#" data-tooltip="Wishlist"><i class="fas fa-heart"></i></a> </li>
-                        <li> <a class="tooltip-title" href="#" data-tooltip="Profile"><i class="fas fa-user-alt"></i></a> </li>
-                        <li> <a class="tooltip-title" href="#" data-tooltip="Cart"><i class="fas fa-shopping-cart"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
-            <p class="bars curser-point"><i class="fas fa-bars"></i></p>
-            <div class="logo-overlay">DASHMALA</div>
+      <div class="container flex-header">
+        <div class="logo">
+          <a href="">
+            <img src="../imgs/logo3.png" alt="logo" width="150px" />
+          </a>
         </div>
+        <div class="flex-nav">
+          <nav class="navbar">
+            <ul class="links">
+              <li>
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  role="button"
+                >
+                  categories</a
+                >
+                <ul
+                  id="menu"
+                  class="dropdown-menu dropdown-menu-right"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <li class="dropdown-item"><a href="#">Living Rooms</a></li>
+                  <li class="dropdown-item"><a href="#">Dining Rooms</a></li>
+                  <li class="dropdown-item"><a href="#">Bed Rooms</a></li>
+                  <li class="dropdown-item"><a href="#">Children Rooms</a></li>
+                  <li class="dropdown-item"><a href="#">Kitchens</a></li>
+                  <li class="dropdown-item"><a href="#">Home Office</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">about us</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </nav>
+          <nav class="navbar">
+            <ul class="icons">
+              <li>
+                <a class="tooltip-title" href="#" data-tooltip="Wishlist"
+                  ><i class="fas fa-heart"></i
+                ></a>
+              </li>
+              <li>
+                <a class="tooltip-title" href="#" data-tooltip="Profile"
+                  ><i class="fas fa-user-alt"></i
+                ></a>
+              </li>
+              <li>
+                <a class="tooltip-title" href="#" data-tooltip="Cart"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="bars curser-point"><i class="fas fa-bars"></i></p>
+        <div class="logo-overlay">DASHMALA</div>
+      </div>
+      <div class="search-section">
+        <h1>Amazing Furniture Design</h1>
+        <p>Always deliver more than expected.</p>
+        <input type="text" placeholder="Search" class="srch-btn">
+      </div>
     </header>
     <!-- end header -->
     <!-- start side navbar -->
     <div class="overlay">
-        <a class="close curser-point">&times;</a>
-        <div class="overlay-content">
-            <a href="#">Categories</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <ul class="icons icons-overlay">
-                <li> <a class="tooltip-title" href="#" data-tooltip="Wishlist"><i class="fas fa-heart"></i></a> </li>
-                <li> <a class="tooltip-title" href="#" data-tooltip="Profile"><i class="fas fa-user-alt"></i></a> </li>
-                <li> <a class="tooltip-title" href="#" data-tooltip="Cart"><i class="fas fa-shopping-cart"></i></a></li>
-            </ul>
-        </div>
+      <a class="close curser-point">&times;</a>
+      <div class="overlay-content">
+        <a href="#">Categories</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <ul class="icons icons-overlay">
+          <li>
+            <a class="tooltip-title" href="#" data-tooltip="Wishlist"
+              ><i class="fas fa-heart"></i
+            ></a>
+          </li>
+          <li>
+            <a class="tooltip-title" href="#" data-tooltip="Profile"
+              ><i class="fas fa-user-alt"></i
+            ></a>
+          </li>
+          <li>
+            <a class="tooltip-title" href="#" data-tooltip="Cart"
+              ><i class="fas fa-shopping-cart"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- end side navbar -->
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script src="../script/jquery-3.5.1.min.js"></script>
     <script src="../script/custom.js"></script>
-</body>
-
+  </body>
 </html>
