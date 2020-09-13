@@ -374,6 +374,10 @@ header {
   border-top-left-radius: 17px;
   border-bottom-right-radius: 17px;
   box-shadow: 11px 15px 10px 0px rgba(189,187,189,1);
+  transition: transform 0.3s ease 0s;
+}
+.card:hover{
+  transform: translateY(-10px);
 }
 .card-img-top{
   border-top-left-radius: 17px;
