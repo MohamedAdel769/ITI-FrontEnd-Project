@@ -249,7 +249,7 @@ header {
 
 /* start header search */
 .search-section {
-  margin: 6% auto;
+  margin: 10% auto;
   text-align: center;
   min-width: 300px;
 }
@@ -324,7 +324,7 @@ header {
 }
 .col {
   width: 33.33%;
-  padding: 20px 80px;
+  /* padding: 20px 80px; */
   position: relative;
   text-align: center;
 }
@@ -333,7 +333,7 @@ header {
   border: 1px solid transparent;
   border-radius: 13%;
   height: 270px;
-  width: 300px;
+  width: 77%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -442,7 +442,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 1135px) {
+@media only screen and (max-width: 767px){
   .flex-nav,
   .logo {
     display: none;
@@ -451,18 +451,71 @@ header {
   .logo-overlay {
     display: initial;
   }
+  .search-section{
+    margin-top: 55% !important;
+  }
+  .search-section h1{
+    font-size: 26px;
+    letter-spacing: 1px !important;
+    word-spacing: 2px;
+  }
+  .search-section p{
+    font-size: 18px !important;
+  }
+  .srch-btn{
+    width: 280px;
+  }
+}
+@media only screen and (min-width: 768px){
+  .container {
+    width: 780px;
+  }
+  .flex-nav,
+  .logo {
+    display: none;
+  }
+  .bars,
+  .logo-overlay {
+    display: initial;
+  }
+  .search-section{
+    margin-top: 35% !important;
+  }
+  .search-section h1{
+    font-size: 40px;
+  }
+  .search-section p{
+    font-size: 22px !important;
+  }
+}
+@media only screen and (min-width: 992px){
+  .container {
+    width: 1000px;
+  }
+  .search-section h1{
+    font-size: 52px;
+  }
+  .search-section{
+    margin-top: 30% !important;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .container {
+    width: 1200px;
+  }
+  .flex-nav,
+  .logo {
+    display: flex;
+  }
+  .bars,
+  .logo-overlay {
+    display: none;
+  }
+  .search-section{
+    margin-top: 10% !important;
+  }
 }
 
-/* @media only screen and (max-width: 700px) {
-    .flex-nav,
-    .logo {
-      display: none;
-    }
-    .bars,
-    .logo-overlay {
-      display: initial;
-    }
-} */
 
 /* end media */
 
