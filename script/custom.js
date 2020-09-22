@@ -30,4 +30,6 @@ $(function () {
       $(this).addClass("far");
     }
   );
+
+  $("#lightSlider").lightSlider(); 
 });

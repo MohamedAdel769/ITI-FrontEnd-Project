@@ -327,6 +327,7 @@ header {
   /* padding: 20px 80px; */
   position: relative;
   text-align: center;
+  margin-bottom: 20px;
 }
 .fe-card {
   background-color:#ECECEC;
@@ -377,10 +378,11 @@ header {
   transition: transform 0.3s ease 0s;
 }
 .card:hover{
-  transform: translateY(-10px);
+  transform: translateX(9px);
 }
 .card-img-top{
   border-top-left-radius: 17px;
+  height: 286px;
 }
 .card-body{
   padding: 10px 15px;
@@ -530,4 +532,7 @@ header {
   font-family: "seg sbold";
   color: var(--primary-color);
   font-size: 1.5rem;
+}
+.clearflex{
+  clear: both;
 }
